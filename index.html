@@ -12,7 +12,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<meta charset="UTF-8">
 	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" ></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js" defer></script>
 
@@ -28,20 +28,20 @@
 	<meta name="twitter:site" content="@test">
 </head>
 <body>
-<div class="top-header">
+<header class="top-header">
 	<h1 class="name">Nina Carducci</h1>
-	<div class="nav">   
+	<nav class="nav">   
 		<ul>
+			<li><a href="#Acceuil">Acceuil</a></li>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"  aria-label="lien instagram"><img src="assets/images/instagram.webp" alt="logo instagram"></a></li>
 		</ul>
-	</div>
-</div>
-<div id="header">
-
+	</nav>
+</header>
+<section id="Acceuil">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -50,13 +50,13 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/Resize_ryoji-iwata-wUZjnOv7t0g-unsplash1.webp" class="d-block w-100" alt="un homme en costume avec un sac qui part au travail">
+				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="un homme en costume avec un sac qui part au travail">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/Resize_nicholas-green-npz8akkumdi-unsplash1.webp" class="d-block w-100" alt="un public dans un concert">
+				<img src="./assets/images/slider/nicholas-green-npz8akkumdi-unsplash.webp" class="d-block w-100" alt="un public dans un concert">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/Resize_edward-cisneros-3_h6-1NPDGw-unsplash1.webp" class="d-block w-100" alt="un mariage avec du public">
+				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="un mariage avec du public">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -68,8 +68,8 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-</div>
-<div id="about">
+</section>
+<section id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina.webp" alt="portrait de nina carducci la Photographe">
 	</div>
@@ -79,8 +79,8 @@
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
-</div>
-<div id="gallery">
+</section>
+<section id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
@@ -103,11 +103,11 @@
 			<p class="quote__author">- Richard Avedon</p>
 		</figure>
 	</div>
-</div>
-<div id="services">
+</section>
+<section id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
-		<div class="service">
+		<article class="service">
 			<div class="service__description">
 				<h3>Shooting photo</h3>
 				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
@@ -117,8 +117,8 @@
 				<p>Matériel, déplacement inclus</p>
 			</div>
 
-		</div>
-		<div class="service">
+		</article>
+		<article class="service">
 			<div class="service__description">
 				<h3>Retouches</h3>
 				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
@@ -127,8 +127,8 @@
 				<p><strong>50€/photo</strong></p>
 				<p>2 AR par photo</p>
 			</div>
-		</div>
-		<div class="service">
+		</article>
+		<article class="service">
 			<div class="service__description">
 				<h3>Album photos</h3>
 				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
@@ -137,9 +137,9 @@
 				<p><strong>400€ album A4</strong></p>
 				<p>30 pages recto/verso</p>
 			</div>
-		</div>
+		</article>
 	</div>
-</div>
+</section>
 <div class="quote">
 		<blockquote>
 			<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
