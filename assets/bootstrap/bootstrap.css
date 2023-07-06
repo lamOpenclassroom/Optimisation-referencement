@@ -103,19 +103,6 @@ h3, .h3 {
   }
 }
 
-h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
-}
-@media (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 1.5rem;
-  }
-}
-
-h6, .h6 {
-  font-size: 1rem;
-}
-
 p {
   margin-top: 0;
   margin-bottom: 1rem;
