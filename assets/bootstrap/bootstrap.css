@@ -1112,6 +1112,7 @@ textarea {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  justify-content: center;
 }
 
 .nav-link {
