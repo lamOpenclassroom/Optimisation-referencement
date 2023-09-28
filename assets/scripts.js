@@ -97,7 +97,9 @@ function displayGallery() {
 }
 displayGallery()
 
-
+let carrousel = 0;
+let count = 0;
+let nbrslide = 0;
 
 function modalImages() {
     //Ouverture de la modale
@@ -105,7 +107,6 @@ function modalImages() {
         data.addEventListener("click", () => {
             myModal.classList.remove("blockmodal");
             sliderModal();
-            slideLeftRight();  
         })
     }
 
@@ -114,6 +115,7 @@ function modalImages() {
         for (data of carrousel){
             data.classList.contains("myactive") ? data.classList.remove("myactive") : null;
         }
+        count = 0;
     });
 
     myModal.children[0].addEventListener("click", (e) => {
@@ -122,7 +124,7 @@ function modalImages() {
 }
 modalImages()
 
-let carrousel = 0;
+
 
 function sliderModal() {
     let titleButton = 0;
@@ -132,44 +134,45 @@ function sliderModal() {
     }
        
     if (titleButton == "Concert") {
-        carrousel = document.querySelectorAll(".moncarousel.Concert.visible");
+        carrousel = document.querySelectorAll(".moncarousel.Concert");
         console.log(titleButton);
     }else if (titleButton == "Entreprises") {
-        carrousel = document.querySelectorAll(".moncarousel.Entreprises.visible");
+        carrousel = document.querySelectorAll(".moncarousel.Entreprises");
         console.log(titleButton)
     }else if (titleButton == "Mariages") {
-        carrousel = document.querySelectorAll(".moncarousel.Mariages.visible");
+        carrousel = document.querySelectorAll(".moncarousel.Mariages");
         console.log(titleButton)
     }else if (titleButton == "Portrait") {
-        carrousel = document.querySelectorAll(".moncarousel.Portrait.visible");
+        carrousel = document.querySelectorAll(".moncarousel.Portrait");
         console.log(titleButton)
     } else {
         carrousel = document.querySelectorAll(".moncarousel")
         console.log(titleButton)
     }
-}
-
-function slideLeftRight() {
-    let nbrslide = carrousel.length;
-    let count = 0;
-    const prev = document.querySelector(".left-arrow");
-    const next = document.querySelector(".rigth-arrow")
-   
     carrousel[count].classList.add("myactive");
+    nbrslide = carrousel.length;
+}
+ 
 
-    function arrowright() {
-        carrousel[count].classList.remove("myactive");
-        if (count < nbrslide - 1) {
-            count++;
-        } else {
+
+
+
+const prev = document.querySelector(".left-arrow");
+const next = document.querySelector(".rigth-arrow")
+
+function arrowright() {
+    carrousel[count].classList.remove("myactive");
+    if (count < nbrslide - 1) {
+        count++;
+    } else {
             count = 0;
-        }
-        carrousel[count].classList.add("myactive");
-        console.log(`"My count is:"${count}`)
     }
-    next.addEventListener("click", arrowright);
+    carrousel[count].classList.add("myactive");
+    console.log(`"My count is:"${count}`)
+}
+next.addEventListener("click", arrowright);
 
-    function arrowleft() {
+function arrowleft() {
         carrousel[count].classList.remove("myactive")
         if (count > 0) {
             count--;
@@ -178,10 +181,9 @@ function slideLeftRight() {
         }
         carrousel[count].classList.add("myactive");
         console.log(`"My count is:"${count}`)
-    }
-    prev.addEventListener("click", arrowleft);
-    count = 0;
 }
+prev.addEventListener("click", arrowleft);
+
 
 
 
