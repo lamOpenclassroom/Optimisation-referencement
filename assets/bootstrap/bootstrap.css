@@ -961,7 +961,7 @@ textarea {
 .carousel-indicators .active {
     opacity:1
 }
-.visually-hidden,.visually-hidden-focusable:not(:focus):not(:focus-within) {
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
     position:absolute!important;
     width:1px!important;
     height:1px!important;
