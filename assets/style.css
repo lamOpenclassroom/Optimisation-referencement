@@ -86,8 +86,10 @@ body {
 }
 .nav-pills .nav-link.active {
     color:#fff;
-    background-color:#918307;
+    background-color:#7E7102;
     border-radius:0;
+    font-weight: bolder;
+    transition: 1s;
 }
 .nav-tem {
     margin:10px
@@ -485,16 +487,11 @@ body {
     text-align:center;
     padding-block:2em
 }
-.nav-pills .nav-link.active {
-    color:#fff;
-    background-color:#918307;
-    border-radius:0;
-    font-weight:bolder;
-    transition:1s
-}
+
 .nav-tem {
     margin:10px
 }
+
 .nav-pills .nav-link {
     color:#000;
     cursor:pointer
